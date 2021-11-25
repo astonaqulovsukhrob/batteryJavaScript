@@ -11,6 +11,16 @@ body {
   overflow-y: hidden;
 }
 
+@keyframes animate {
+  50% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .container::before {
   content: "";
   width: 400px;
@@ -109,6 +119,7 @@ body {
 .isCharging {
   font-size: 25px;
   letter-spacing: 1px;
+  animation: animate 2s ease-in-out infinite;
 }
 
 @media (max-width: 768px) {
