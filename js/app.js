@@ -17,7 +17,7 @@ navigator.getBattery().then((battery) => {
   }
 
   function updateChargeInfo() {
-    isCharging.innerHTML = battery.charging ? "Your derice charging" : "";
+    isCharging.innerHTML = battery.charging ? "Your device charging" : "";
     batteryColor.classList.toggle("active");
     batteryBolt.classList.toggle("hidden");
   }
